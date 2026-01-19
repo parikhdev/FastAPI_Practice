@@ -1,0 +1,25 @@
+Problem: Module Not Found Error
+Solution: 
+1) Check if (myenv) is active.
+2) Run which python and which pip to see if they match.
+3) If nothing works, delete myenv and make a new one.
+
+    Command	                                 What it does	                                        Example
+
+1) which <program>	          Shows the exact path to a program the shell will run.	        which python3
+
+2) echo <variable>	              Prints the value of a variable.	                      echo $PYTHONPATH
+
+3) source <file>	        Runs a script in the current terminal session.	       source myenv/bin/activate
+
+4) rm -rf <folder>	    ⚠️ Delete a folder and everything in it. (Use with caution!)	       rm -rf myenv
+
+5) deactivate	           A function that exits the active virtual environment.	            deactivate
+
+6) Ctrl + C	                 Stops/cancels the currently running command.
+
+7) python3 -m venv <name>      Creates a new Python virtual environment.              python3 -m venv myenv
+
+8) pip install <package>         Installs a Python package from PyPI.          pip install "pydantic[email]"
+
+9) pip show <package>      Shows details about an already installed package.              pip show pydantic
