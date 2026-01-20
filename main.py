@@ -4,14 +4,14 @@
 from fastapi import FastAPI, Path, HTTPException, Query
 import json
 
-app = FastAPI()
+app = FastAPI() # For Creating the endpoint 
 
 def load_data():
     with open('patients.json', 'r') as f:
         data = json.load(f)
         return data
 
-@app.get("/")
+@app.get("/") # @ is the route and the name of the route is /
 def Welcome():
     return {'message': 'Patient Management System API'}
     
