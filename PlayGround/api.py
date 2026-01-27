@@ -9,3 +9,10 @@ def root():
 @app.get("/items/{item_Id}") # Route 2
 def get_item(item_Id: int):
     return {"item_Id": item_Id}
+
+@app.get("/search")
+def search_items(q:str, limit:int =10):
+    return {
+        "query": q,
+        "limit": limit
+    }
